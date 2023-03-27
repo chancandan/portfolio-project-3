@@ -24,6 +24,10 @@ def play_hangman(difficulty, username):
     print("You start out with 6 lives.")
     print("Good luck!\n")
 
+    word = game_word(difficulty)
+    if word is None:
+        return
+
 
 
 username = input("Please enter your username: ")
