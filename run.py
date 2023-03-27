@@ -1,15 +1,15 @@
 import random
 
-def game_word(difficulty):
-    if difficulty == "easy":
+def game_word(level):
+    if level == "easy":
         word_list = ["cat", "dog", "hat", "car", "tree", "book", "door", "cake", "bird", "pen"]
-    elif difficulty == "medium":
+    elif level == "medium":
         word_list = ["computer", "python", "jacket", "sunflower", "television", "guitar", "popcorn", "giraffe", "restaurant", "hamster"]
-    elif difficulty == "hard":
+    elif level == "hard":
         word_list = ["xylophone", "juxtaposition", "quagmire", "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous", "zeitgeist", "quintessential"]
     else:
         print("That's not a valid difficulty level. Please choose from either easy, medium or hard.")
-    return None
+        return None
 
     word = random.choice(word_list)
     return word
@@ -60,7 +60,7 @@ def play_hangman(difficulty, username):
 
     play_again = input("Would you like to play again? (y/n/)").lower()
     if play_again == "y":
-        play_game(difficulty, username)
+        play_hangman(difficulty, username)
     else:
         print("Thanks for playing, come back soon!")
 
@@ -83,11 +83,11 @@ while True:
         difficulty_choice = input("Enter your choice (1, 2, or 3): ")
         print("")
         if difficulty_choice == "1":
-            play_game("easy", username)
+            play_hangman("easy", username)
         elif difficulty_choice == "2":
-            play_game("medium", username)
+            play_hangman("medium", username)
         elif difficulty_choice == "3":
-            play_game("hard", username)
+            play_hangman("hard", username)
         else:
             print("Invalid input. Please enter 1, 2, or 3.")
     elif choice == "2":
