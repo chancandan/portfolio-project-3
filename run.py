@@ -53,9 +53,16 @@ def play_hangman(difficulty, username):
         guessed_letters.append(guess)
         print("")
 
+    if lives == 0:
+        print("Game Over! You lost.")
+    else:
+        print("You guessed the word, well done!")
 
-
-
+    play_again = input("Would you like to play again? (y/n/)").lower()
+    if play_again == "y":
+        play_game(difficulty, username)
+    else:
+        print("Thanks for playing, come back soon!")
 
 username = input("Please enter your username: ")
 print("Welcome to Hangman!")
