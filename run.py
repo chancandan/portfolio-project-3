@@ -66,5 +66,46 @@ def play_hangman(difficulty, username):
 
 username = input("Please enter your username: ")
 print("Welcome to Hangman!")
+while True:
+    print("Please select an option:")
+    print("1 - Play the game")
+    print("2 - Read the game instructions")
+    print("3 - View game high scores")
+    print("4 - Exit the game")
+    choice = input("Enter your choice (1, 2, 3, or 4): ")
+    print("")
+
+    if choice == "1":
+        print("Choose a difficulty level:")
+        print("1 - Easy")
+        print("2 - Medium")
+        print("3 - Hard")
+        difficulty_choice = input("Enter your choice (1, 2, or 3): ")
+        print("")
+        if difficulty_choice == "1":
+            play_game("easy", username)
+        elif difficulty_choice == "2":
+            play_game("medium", username)
+        elif difficulty_choice == "3":
+            play_game("hard", username)
+        else:
+            print("Invalid input. Please enter 1, 2, or 3.")
+    elif choice == "2":
+        print("Instructions:")
+        print("Try to guess the secret word one letter at a time.")
+        print("If you guess a correct letter, it will be revealed in the word.")
+        print("If you guess an incorrect letter, you will lose a life.")
+        print("You have 6 lives to start with.")
+        print("Good luck!\n")
+    elif choice == "3":
+        print("High scores:")
+        print("1. Player 1 - 1000 points")
+        print("2. Player 2 - 750 points")
+        print("3. Player 3 - 500 points")
+    elif choice == "4":
+        print("Thanks for playing Hangman!")
+        break
+    else:
+        print("Invalid input. Please enter 1, 2, 3, or 4.")
 
 
