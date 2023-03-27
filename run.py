@@ -15,7 +15,11 @@ def game_word(difficulty):
     return word
 
 
-
+def play_hangman(difficulty, username):
+    print(f"Welcome {username}. Let's play some Hangman!\n")
+    print("Game instructions:")
+    print("Guess the secret word one letter at a time.")
+    
 
 
 username = input("Please enter your username: ")
