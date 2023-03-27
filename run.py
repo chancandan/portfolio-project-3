@@ -15,3 +15,10 @@ def game_word(difficulty):
     return word
 
 
+
+
+
+username = input("Please enter your username: ")
+print("Welcome to Hangman!")
+
+
