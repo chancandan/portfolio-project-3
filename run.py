@@ -19,7 +19,11 @@ def play_hangman(difficulty, username):
     print(f"Welcome {username}. Let's play some Hangman!\n")
     print("Game instructions:")
     print("Guess the secret word one letter at a time.")
-    
+    print("Correct guessed letters will be revealed in the word.")
+    print("You will lose a life for each letter guessed that is wrong.")
+    print("You start out with 6 lives.")
+    print("Good luck!\n")
+
 
 
 username = input("Please enter your username: ")
