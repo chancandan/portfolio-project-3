@@ -120,5 +120,3 @@ while True:
         break
     else:
         print("Invalid input. Please enter 1, 2, 3, or 4.")
-
-
