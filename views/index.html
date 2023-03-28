@@ -1,6 +1,14 @@
-<body>
+<body style="background-image: url('../images/chalkboard.jpg'); background-size: cover;">
     <button onclick="window.location.reload()">Run Program</button>
     <div id="terminal"></div>
+
+    <style>
+        #terminal {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 
     <script>
         var term = new Terminal({
@@ -25,13 +33,6 @@
         document.getElementsByClassName("xterm-helper-textarea")[0].focus();
     </script>
 
-<style>
-    #terminal {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-</style>
+
 
 </body>
