@@ -1,18 +1,15 @@
 import random
 
 def game_word(level):
-    if level == "easy":
-        word_list = ["cat", "name", "dog", "hat", "car", "tree", "book", "door", "cake", "bird", "pen"]
-    elif level == "medium":
-        word_list = ["soccer", "computer", "python", "jacket", "sunflower", "television", "guitar", "popcorn", "giraffe", "restaurant", "hamster"]
-    elif level == "hard":
-        word_list = ["qualifier", "xylophone", "juxtaposition", "quagmire", "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous", "zeitgeist", "quintessential"]
-    else:
+    word_dict = {
+        "easy": ["cat", "name", "dog", "hat", "car", "tree", "book", "door", "cake", "bird", "pen"],
+        "medium": ["soccer", "computer", "python", "jacket", "sunflower", "television", "guitar", "popcorn", "giraffe", "restaurant", "hamster"],
+        "hard": ["qualifier", "xylophone", "juxtaposition", "quagmire", "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous", "zeitgeist", "quintessential"]
+    }
+    if level not in word_dict:
         print("That's not a valid difficulty level. Please choose from either easy, medium or hard.")
         return None
-
-    word = random.choice(word_list)
-    return word
+    return random.choice(word_dict[level])
 
 
 def play_hangman(difficulty, username):
