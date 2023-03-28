@@ -32,6 +32,20 @@ def play_hangman(difficulty, username):
     guessed_letters = []
     lives = 6
 
+    # ASCII art of the hangman
+    hangman = [
+        "   _________",
+        "   |        |",
+        "   |        O",
+        "   |       /|\\",
+        "   |        |",
+        "   |       / \\",
+        "___|___"
+    ]
+    # Print the initial hangman
+    print("\n".join(hangman[:lives]))
+    
+
     while lives > 0 and "_" in secret_word:
         print(" ".join(secret_word))
         print(f"Remaining Lives: {lives}")
@@ -54,7 +68,7 @@ def play_hangman(difficulty, username):
         print("")
 
     if lives == 0:
-        print("Game Over! You lost.")
+        print("Game Over! You lost. The answer was: " + word.capitalize())
     else:
         print("You guessed the word, well done!")
 
