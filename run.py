@@ -49,7 +49,7 @@ def play_hangman(difficulty, username):
     while lives > 0 and "_" in secret_word:
         print(" ".join(secret_word))
         print(f"Remaining Lives: {lives}")
-        guess = input("Guess a letter: ").lower()
+        guess = input("Guess a letter: \n").lower()
 
         if guess in guessed_letters:
             print("You've already used that letter. Try another.")
