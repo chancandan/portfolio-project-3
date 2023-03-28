@@ -2,12 +2,18 @@ import random
 
 def game_word(level):
     word_dict = {
-        "easy": ["cat", "name", "dog", "hat", "car", "tree", "book", "door", "cake", "bird", "pen"],
-        "medium": ["soccer", "computer", "python", "jacket", "sunflower", "television", "guitar", "popcorn", "giraffe", "restaurant", "hamster"],
-        "hard": ["qualifier", "xylophone", "juxtaposition", "quagmire", "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous", "zeitgeist", "quintessential"]
+        "easy": ["cat", "name", "dog", "hat", "car", "tree", "book", "door",\
+        "cake", "bird", "pen"],
+        "medium": ["soccer", "computer", "python", "jacket", "sunflower",\
+        "television", "guitar", "popcorn", "giraffe", "restaurant",\
+        "hamster"],
+        "hard": ["qualifier", "xylophone", "juxtaposition", "quagmire",\
+        "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous",\
+        "zeitgeist", "quintessential"]
     }
     if level not in word_dict:
-        print("That's not a valid difficulty level. Please choose from either easy, medium or hard.")
+        print("That's not a valid difficulty level. Please choose from\
+            either: easy, medium or hard.")
         return None
     return random.choice(word_dict[level])
 
