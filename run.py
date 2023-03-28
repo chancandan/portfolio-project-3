@@ -1,5 +1,6 @@
 import random
 
+
 def game_word(level):
     word_dict = {
         "easy": ["cat", "name", "dog", "hat", "car", "tree", "book", "door",\
@@ -47,7 +48,6 @@ def play_hangman(difficulty, username):
     ]
     # Print the initial hangman
     print("\n".join(hangman[:lives]))
-    
 
     while lives > 0 and "_" in secret_word:
         print(" ".join(secret_word))
@@ -68,7 +68,7 @@ def play_hangman(difficulty, username):
             lives -= 1
 
         guessed_letters.append(guess)
-        
+
         # Print the updated hangman
         print("\n".join(hangman[:lives]))
 
@@ -82,6 +82,7 @@ def play_hangman(difficulty, username):
         play_hangman(difficulty, username)
     else:
         print("Thanks for playing, come back soon!")
+
 
 username = input("Please enter your username: ")
 print("Welcome to Hangman!")
@@ -112,7 +113,8 @@ while True:
     elif choice == "2":
         print("Instructions:")
         print("Try to guess the secret word one letter at a time.")
-        print("If you guess a correct letter, it will be revealed in the word.")
+        print("If you guess a correct letter, it will be revealed in the \
+            word.")
         print("If you guess an incorrect letter, you will lose a life.")
         print("You have 6 lives to start with.")
         print("Good luck!\n")
