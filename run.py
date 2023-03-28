@@ -2,11 +2,11 @@ import random
 
 def game_word(level):
     if level == "easy":
-        word_list = ["cat", "dog", "hat", "car", "tree", "book", "door", "cake", "bird", "pen"]
+        word_list = ["cat", "name", "dog", "hat", "car", "tree", "book", "door", "cake", "bird", "pen"]
     elif level == "medium":
-        word_list = ["computer", "python", "jacket", "sunflower", "television", "guitar", "popcorn", "giraffe", "restaurant", "hamster"]
+        word_list = ["soccer", "computer", "python", "jacket", "sunflower", "television", "guitar", "popcorn", "giraffe", "restaurant", "hamster"]
     elif level == "hard":
-        word_list = ["xylophone", "juxtaposition", "quagmire", "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous", "zeitgeist", "quintessential"]
+        word_list = ["qualifier", "xylophone", "juxtaposition", "quagmire", "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous", "zeitgeist", "quintessential"]
     else:
         print("That's not a valid difficulty level. Please choose from either easy, medium or hard.")
         return None
