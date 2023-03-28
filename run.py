@@ -1,5 +1,28 @@
 import random
 
+def main_menu():
+    print("Welcome to Hangman!")
+    print("Select an option:")
+    print("1 - Play game")
+    print("2 - Instructions")
+    print("3 - Quit")
+
+    choice = input("Enter your choice (1-3): ")
+    while choice not in ["1", "2", "3"]:
+        choice = input("Invalid choice. Please enter 1, 2, or 3: ")
+
+    if choice == "1":
+        play_game()
+    elif choice == "2":
+        print_instructions()
+    else:
+        print("Thanks for playing!")
+        quit()
+
+def play_game():
+    print("You have selected to play Hangman!")
+    print("Choose a difficulty level:")
+
 def game_word(level):
     word_dict = {
         "easy": ["cat", "name", "dog", "hat", "car", "tree", "book", "door", "cake", "bird", "pen"],
