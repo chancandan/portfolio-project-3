@@ -94,7 +94,7 @@ print("""
                      __/ |                      
                     |___/                       
 
-                Welcome to Hangman!
+Welcome to Hangman!
 """)
 username = input("Please enter your username: ")
 
