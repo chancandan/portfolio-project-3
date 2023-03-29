@@ -85,14 +85,14 @@ def play_hangman(difficulty, username):
 
 
 print("""
- _    _                                         
-| |  | |                                        
+ _    _                                   
+| |  | |                                       
 | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
 |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
 | |  | | (_| | | | | (_| | | | | | | (_| | | | |
 |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
-                     __/ |                      
-                    |___/                       
+                     __/ |                     
+                    |___/                      
 
 Welcome to Hangman!
 """)
@@ -140,3 +140,4 @@ while True:
         break
     else:
         print("Invalid input. Please enter 1, 2, 3, or 4.")
+        
