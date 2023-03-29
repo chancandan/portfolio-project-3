@@ -8,44 +8,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/addons/attach/attach.js"></script>
-    <title>Hangman Game - Daniel Lyons</title>
-
+    <title>Python Terminal by Code Institute</title>
     <style>
-        
         body {
             font-family: Arial;
-            margin: 0;
-        }
-
-        /* Styling for background */
-        #background {
-            background: url(/chalk.jpg) center center / cover no-repeat;
-            background-color: rgba(0, 0, 0, 0.4);
-            background-blend-mode: darken;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        /* Styling for terminal */
-        #terminal {
-            border: 20px solid #000;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        #main-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-image: url("chalk.jpg");
-            background-size: cover;
         }
 
         /**
@@ -107,10 +73,6 @@
             display: block;
         }
 
-        .xterm {
-            margin: 0 auto;
-        }
-
         .xterm .xterm-viewport {
             /* On OS X this is required in order for the scroll bar to appear fully opaque */
             background-color: #000;
@@ -123,9 +85,6 @@
             bottom: 0;
             background-color: rgb(0, 0, 0);
             width: 730px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
         .xterm .xterm-screen {
@@ -209,13 +168,6 @@
     </style>
 </head>
 
-<body>
-
-    <main id="main container">
-
-        @{body}
-    </main>
-</body>
-
+@{body}
 
 </html>
