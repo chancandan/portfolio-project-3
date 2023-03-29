@@ -4,10 +4,10 @@ import random
 def game_word(level):
     word_dict = {
         "easy": ["cat", "name", "dog", "hat", "car", "tree", "book", "door",\
-        "cake", "bird", "pen"],
+        "cake", "bird", "pen", "slip", "card", "game"],
         "medium": ["soccer", "computer", "python", "jacket", "sunflower",\
         "television", "guitar", "popcorn", "giraffe", "restaurant",\
-        "hamster"],
+        "hamster", "basket", "ticket"],
         "hard": ["qualifier", "xylophone", "juxtaposition", "quagmire",\
         "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous",\
         "zeitgeist", "quintessential"]
