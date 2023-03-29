@@ -20,7 +20,7 @@ def game_word(level):
 
 
 def play_hangman(difficulty, username):
-    print("\033[32m" + f"Welcome {username}. Let's play some Hangman!\n")
+    print("\033[32m" + f"Welcome {username}. Let's play some Hangman!\n" + "\033[0m")
     print("Game instructions:")
     print("Guess the secret word one letter at a time.")
     print("Correct guessed letters will be revealed in the word.")
