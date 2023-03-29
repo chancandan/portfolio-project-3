@@ -84,8 +84,9 @@ def play_hangman(difficulty, username):
         print("Thanks for playing, come back soon!")
 
 
-username = input("Please enter your username: ")
 print("Welcome to Hangman!")
+username = input("Please enter your username: ")
+
 while True:
     print("Please select an option:")
     print("1 - Play the game")
