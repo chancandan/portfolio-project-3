@@ -4,7 +4,7 @@ import random
 def game_word(level):
     word_dict = {
         "easy": ["cat", "name", "dog", "hat", "car", "tree", "book", "door",\
-        "cake", "bird", "pen", "slip", "card", "game"],
+        "cake", "bird", "pen", "slip", "card", "game", "coin"],
         "medium": ["soccer", "computer", "python", "jacket", "sunflower",\
         "television", "guitar", "popcorn", "giraffe", "restaurant",\
         "hamster", "basket", "ticket"],
@@ -20,7 +20,7 @@ def game_word(level):
 
 
 def play_hangman(difficulty, username):
-    print(f"Welcome {username}. Let's play some Hangman!\n")
+    print("\033[32m" + f"Welcome {username}. Let's play some Hangman!\n")
     print("Game instructions:")
     print("Guess the secret word one letter at a time.")
     print("Correct guessed letters will be revealed in the word.")
