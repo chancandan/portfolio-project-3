@@ -7,10 +7,10 @@ def game_word(level):
         "cake", "bird", "pen", "slip", "card", "game", "coin"],
         "medium": ["soccer", "computer", "python", "jacket", "sunflower",\
         "television", "guitar", "popcorn", "giraffe", "restaurant",\
-        "hamster", "basket", "ticket"],
+        "hamster", "basket", "ticket", "packet"],
         "hard": ["qualifier", "xylophone", "juxtaposition", "quagmire",\
         "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous",\
-        "zeitgeist", "quintessential"]
+        "zeitgeist", "quintessential", "terminal"]
     }
     if level not in word_dict:
         print("That's not a valid difficulty level. Please choose from\
