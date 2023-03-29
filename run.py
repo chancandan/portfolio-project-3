@@ -84,7 +84,18 @@ def play_hangman(difficulty, username):
         print("Thanks for playing, come back soon!")
 
 
-print("Welcome to Hangman!")
+print("""
+ _    _                                         
+| |  | |                                        
+| |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
+|  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| |  | | (_| | | | | (_| | | | | | | (_| | | | |
+|_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                     __/ |                      
+                    |___/                       
+
+                Welcome to Hangman!
+""")
 username = input("Please enter your username: ")
 
 while True:
