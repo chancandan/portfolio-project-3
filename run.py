@@ -52,12 +52,12 @@ def play_hangman(difficulty, username):
     while lives > 0 and "_" in secret_word:
         print(" ".join(secret_word))
         print(f"Remaining Lives: {lives}")
-        guess = input("Guess a letter: \n").upper()
+        guess = input("Guess a letter: \n").lower()
 
         # Validate the user's input when they guess a letter.
         while len(guess) != 1 or not guess.isalpha():
             print("Invalid input. Please enter just a single letter.")
-            guess = input("Guess a letter: \n").upper()
+            guess = input("Guess a letter: \n").lower()
 
         if guess in guessed_letters:
             print("You've already used that letter. Try another.")
