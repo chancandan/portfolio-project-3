@@ -87,7 +87,7 @@ def play_hangman(difficulty, username):
         print("Thanks for playing, come back soon!")
 
 
-print("""
+print("\033[32m" + """
  _    _                                   
 | |  | |                                       
 | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
@@ -98,7 +98,7 @@ print("""
                     |___/                      
 
 Welcome to Hangman!
-""")
+"""  + "\033[0m")
 username = input("Please enter your username: ")
 
 while True:
