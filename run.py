@@ -88,23 +88,6 @@ def play_hangman(difficulty, username):
     print("You start out with 6 lives.")
     print("Good luck!\n")
 
-    score = 0  # initialize the score to 0
-
-    # read the current score from the file, if it exists
-    if os.path.isfile("scores.txt"):
-        with open("scores.txt", "r") as f:
-            score = int(f.read())
-
-    # play the game and update the score if the user wins
-    if is_game_over(lives, secret_word, word):
-        if lives > 0:
-            print("\033[32mYou win! You guessed the word, well done!\033[0m")
-            score += 1  # increment the score
-
-            # write the updated score to the file
-            with open("scores.txt", "w") as f:
-                f.write(str(score))
-
     word = game_word(difficulty)
     if word is None:
         return
