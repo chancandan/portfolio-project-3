@@ -1,6 +1,10 @@
 import random
 
 def game_word(level):
+    """
+    This function selects a random word from a dictionary based on the given level of difficulty.
+    It validates that user must chose from the available options.
+    """
     word_dict = {
         "easy": ["cat", "name", "dog", "hat", "car", "tree", "book", "door",\
         "cake", "bird", "pen", "slip", "card", "game", "coin"],
@@ -19,6 +23,11 @@ def game_word(level):
 
 
 def play_hangman(difficulty, username):
+    """
+    This function starts a game of Hangman with a the user's chosen difficulty level and username.
+    It prints the game instructions and sets up the game variables such as the secret word, 
+    guessed letters, and remaining lives. The secret word is generated using the `game_word` function.
+    """
     print("\033[32m" + f"Welcome {username}. Let's play some Hangman!\n" + "\033[0m")
     print("Game instructions:")
     print("Guess the secret word one letter at a time.")
