@@ -1,20 +1,23 @@
 import random
 
+
 def game_word(level):
     """
-    This function selects a random word from a dictionary based 
-    on the given level of difficulty.
-    It validates that user must chose from the available options.
+    This function selects a random word from a dictionary based
+    on the given level of difficulty. It validates that user must
+    chose from the available options.
     """
     word_dict = {
-        "easy": ["cat", "name", "cup", "dog", "hat", "car", "tree", "book", "door",
-        "cake", "bird", "pen", "slip", "card", "game", "coin", "pole"],
+        "easy": ["cat", "name", "cup", "dog", "hat", "car", "tree", "book",
+                 "door", "cake", "bird", "pen", "slip", "card", "game", "coin",
+                 "pole"],
         "medium": ["soccer", "computer", "python", "jacket", "sunflower",
-        "television", "guitar", "popcorn", "giraffe", "restaurant",
-        "hamster", "basket", "ticket", "packet", "laptop"],
+                   "television", "guitar", "popcorn", "giraffe", "restaurant",
+                   "hamster", "basket", "ticket", "packet", "laptop"],
         "hard": ["qualifier", "xylophone", "juxtaposition", "quagmire",
-        "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous",
-        "zeitgeist", "quintessential", "terminal", "calculator"]
+                 "mnemonic", "haphazard", "furtive", "belligerent",
+                 "ubiquitous", "zeitgeist", "quintessential", "terminal",
+                 "calculator"]
     }
     if level not in word_dict:
         print("That's not a valid difficulty level. Please choose from\
@@ -25,11 +28,13 @@ def game_word(level):
 
 def play_hangman(difficulty, username):
     """
-    This function starts a game of Hangman with a the user's chosen difficulty level and username.
-    It prints the game instructions and sets up the game variables such as the secret word, 
-    guessed letters, and remaining lives. The secret word is generated using the `game_word` function.
+    This function starts a game of Hangman with a the user's chosen difficulty
+    level and username. It prints the game instructions and sets up the game
+    variables such as the secret word, guessed letters, and remaining lives.
+    The secret word is generated using the game_word function.
     """
-    print("\033[32m" + f"Welcome {username}. Let's play some Hangman!\n" + "\033[0m")
+    print("\033[32m" + f"Welcome {username}. Let's play some Hangman!\n" +
+          "\033[0m")
     print("Game instructions:")
     print("Guess the secret word one letter at a time.")
     print("Correct guessed letters will be revealed in the word.")
@@ -49,7 +54,7 @@ def play_hangman(difficulty, username):
 def is_valid_guess(guess, guessed_letters):
     """
     This function validates the user's input when they guess a letter.
-    Checks if the letter has already been guessed by the user and if 
+    Checks if the letter has already been guessed by the user and if
     the guess is a single alphabetical character.
     """
     if len(guess) != 1 or not guess.isalpha():
@@ -85,7 +90,8 @@ def is_game_over(lives, secret_word, word):
     over or not based on the numbe rof remaining lives left.
     """
     if lives == 0:
-        print(f"\033[31mGame Over! You lost. The answer was: {word.capitalize()}\033[0m")
+        print("\033[31mGame Over! You lost. The answer was: "
+              f"{word.capitalize()}\033[0m")
         return True
     elif "_" not in secret_word:
         print("\033[32mYou win! You guessed the word, well done!\033[0m")
@@ -138,18 +144,18 @@ def play_hangman(difficulty, username):
         print("Thanks for playing, come back soon!")
 
 
+print("\033[32m" +
+      " _    _     \n" +
+      "| |  | |    \n" +
+      "| |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  \n" +
+      "|  __  |/ _` | '_ \\ / _` | '_ ` _ \\ / _` | '_ \\ \n" +
+      "| |  | | (_| | | | | (_| | | | | | | (_| | | | |\n" +
+      "|_|  |_|\\__,_|_| |_|\\__, |_| |_| |_|\\__,_|_| |_|\n" +
+      "                     __/ |                      \n" +
+      "                    |___/                       \n" +
+      "\033[0m" +
+      "Welcome to Hangman!\n")
 
-print("\033[32m" + """
- _    _                                   
-| |  | |                                       
-| |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
-|  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
-| |  | | (_| | | | | (_| | | | | | | (_| | | | |
-|_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
-                     __/ |                     
-                    |___/                      
-
-""" + "\033[0m" + "Welcome to Hangman!\n")
 username = input("Please enter your username: ")
 
 while True:
@@ -194,4 +200,3 @@ while True:
         break
     else:
         print("Invalid input. Please enter 1, 2, 3, or 4.")
-        
