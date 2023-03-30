@@ -2,17 +2,18 @@ import random
 
 def game_word(level):
     """
-    This function selects a random word from a dictionary based on the given level of difficulty.
+    This function selects a random word from a dictionary based 
+    on the given level of difficulty.
     It validates that user must chose from the available options.
     """
     word_dict = {
-        "easy": ["cat", "name", "cup", "dog", "hat", "car", "tree", "book", "door",\
+        "easy": ["cat", "name", "cup", "dog", "hat", "car", "tree", "book", "door",
         "cake", "bird", "pen", "slip", "card", "game", "coin", "pole"],
-        "medium": ["soccer", "computer", "python", "jacket", "sunflower",\
-        "television", "guitar", "popcorn", "giraffe", "restaurant",\
+        "medium": ["soccer", "computer", "python", "jacket", "sunflower",
+        "television", "guitar", "popcorn", "giraffe", "restaurant",
         "hamster", "basket", "ticket", "packet", "laptop"],
-        "hard": ["qualifier", "xylophone", "juxtaposition", "quagmire",\
-        "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous",\
+        "hard": ["qualifier", "xylophone", "juxtaposition", "quagmire",
+        "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous",
         "zeitgeist", "quintessential", "terminal", "calculator"]
     }
     if level not in word_dict:
@@ -108,7 +109,7 @@ def play_hangman(difficulty, username):
 
     secret_word = ["_"] * len(word)
     guessed_letters = []
-    lives = 6
+    lives = 1
 
     print_hangman(lives)
 
@@ -125,7 +126,7 @@ def play_hangman(difficulty, username):
                         secret_word[i] = guess
             else:
                 print("\033[31mIncorrect\033[0m")
-                lives -= 1
+                lives += 1
 
             guessed_letters.append(guess)
             print_hangman(lives)
