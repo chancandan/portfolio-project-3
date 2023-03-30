@@ -164,7 +164,9 @@ while True:
     print("\nPlease select an option:\n")
     print("1 - Play the game")
     print("2 - Read the game instructions")
+    """
     print("3 - View game high scores")
+    """
     print("4 - Exit the game\n")
     choice = input("Enter your choice (1, 2, 3, or 4): ")
     print("")

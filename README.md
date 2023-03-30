@@ -62,11 +62,13 @@ The game has been designed to provide both an engaging and enjoyable user experi
 
 ### Welcome Message
 
-insert picture here
-
 * A simple heading / welcome message displaying the game name in a ASCII art that is in a design often used in gaming realted content.
 
-![Title](docs/readme_images/game_title.JPG)
+![Title](docs/readme_images/welcome_banner.jpg)
+
+### Main Menu
+
+* After entering a username the user will be presented with the main menu.
 
 ### Help / Game rules
 
@@ -108,11 +110,21 @@ json
 Git
 GitHub
 
-### Testing
+## Testing
 
 ### PEP 8 Online
 
-Code Institute's Python Linter was used to test my python code to the PEP8 standards and adjustments were made to make sure my code was up to these standards.
+* Code Institute's Python Linter was used to test my python code to the PEP8 standards and adjustments were made to make sure my code was up to these standards. Throughout the development of this game I had various errors in my code as shown in the image below;
+
+![Python Errors](docs/readme_images/ci_python_linter_errors.jpg)
+
+* I debugged and fix all listed errors.<br>
+At the end of development the game's python code satisfy's<br>
+PEP 8's standards for python code as seen blow.
+
+![Python Errors](docs/readme_images/error_free_code.jpg)
+
+
 
 
 
