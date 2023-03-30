@@ -171,7 +171,7 @@ while True:
     print("4 - Exit the game")
     choice = input("Enter your choice (1, 2, 3, or 4): ")
     print("")
-
+    clear_terminal()
     if choice == "1":
         print("Choose a difficulty level:")
         print("1 - Easy")
@@ -179,6 +179,7 @@ while True:
         print("3 - Hard")
         difficulty_choice = input("Enter your choice (1, 2, or 3): ")
         print("")
+        clear_terminal()
         if difficulty_choice == "1":
             play_hangman("easy", username)
         elif difficulty_choice == "2":
