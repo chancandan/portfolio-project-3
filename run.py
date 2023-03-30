@@ -161,7 +161,7 @@ print("\033[32m" +
       "\033[0m" +
       "Welcome to Hangman!\n")
 
-username = input("Please enter your username: ")
+username = input("Please enter your username: \n")
 
 while True:
     print("Please select an option:")
