@@ -3,7 +3,13 @@ import random
 
 
 def clear_terminal():
+    """
+    Function clears the terminal screen by using the 'os' module to call
+    the appropriate command based on the
+    operating system.
+    """
     os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def game_word(level):
     """
@@ -80,6 +86,16 @@ def is_game_over(lives, secret_word, word):
 
 
 def play_hangman(difficulty, username):
+    """
+    This function will play a game of hangman based on the chosen user
+    difficulty and their given username. It will also print the
+    instructions and initializes game variables. It then enters a
+    loop that prompts the player to guess letters until the
+    game is over. It checks if the letter is valid and updates the
+    game state. If the player guesses the secret word, they win the game.
+    Otherwise, after 6 incorrect guesses they lose. Game ends with a
+    won or lost message.
+    """
     print(f"\033[32mWelcome {username}. Let's play some Hangman!\n\033[0m")
     print("Game instructions:")
     print("Guess the secret word one letter at a time.")
@@ -99,6 +115,12 @@ def play_hangman(difficulty, username):
     print_hangman(lives)
 
     while not is_game_over(lives, secret_word, word):
+        """
+        Loop runs until game is over. Prompts players to guess a letter,
+        checks if valid, then updates game state. Correctly guessed letters
+        are revleaed in the secret word. Players lose a life if guesses are
+        incorrect. When the game is over the loop ends.
+        """
         print(" ".join(secret_word))
         print(f"Remaining Lives: {lives}")
         guess = input("Guess a letter: ").lower()
@@ -106,8 +128,8 @@ def play_hangman(difficulty, username):
         if is_valid_guess(guess, guessed_letters):
             if guess in word:
                 print("\033[32mCorrect\033[0m")
-                for i in range(len(word)):
-                    if word[i] == guess:
+                for i, letter in enumerate(word):
+                    if letter == guess:
                         secret_word[i] = guess
             else:
                 clear_terminal()
