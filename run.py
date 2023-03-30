@@ -62,6 +62,10 @@ def is_valid_guess(guess, guessed_letters):
 
 
 def print_hangman(lives):
+    """
+    This function prints the ASCII art of the hangman and its state
+    for the given number of remaining lives.
+    """
     hangman = [
         "   _________",
         "   |        |",
@@ -73,7 +77,12 @@ def print_hangman(lives):
     ]
     print("\n".join(hangman[:lives]))
 
+
 def is_game_over(lives, secret_word, word):
+    """
+    Function checks the state of the game and whether the game is
+    over or not based on the numbe rof remaining lives left.
+    """
     if lives == 0:
         print(f"\033[31mGame Over! You lost. The answer was: {word.capitalize()}\033[0m")
         return True
@@ -82,6 +91,7 @@ def is_game_over(lives, secret_word, word):
         return True
     else:
         return False
+
 
 def play_hangman(difficulty, username):
     print(f"\033[32mWelcome {username}. Let's play some Hangman!\n\033[0m")
