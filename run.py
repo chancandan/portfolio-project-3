@@ -4,9 +4,9 @@ import random
 
 def clear_terminal():
     """
-    Function clears the terminal screen by using the 'os' module to call
-    the appropriate command based on the
-    operating system.
+    Clears the terminal window for clearer screen readability.
+    Found this method on Stackoverflow:
+    https://stackoverflow.com/questions/2084508/clear-terminal-in-python
     """
     os.system('cls' if os.name == 'nt' else 'clear')
 

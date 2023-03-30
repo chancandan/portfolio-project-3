@@ -1,7 +1,7 @@
 # Hangman Game
 (Developed by Daniel Lyons)
 
-![Mockup](docs/readme_images/responsiveness.JPG)
+![Flow Chart](docs/readme_images/hangman_mockup.JPG)
 
 # Introduction
 Welcoem to the Hangman Game! This is a classic word guessing game that challenges your vocab and guessing skills to guess a secret word until you run out of lives. 
@@ -54,8 +54,9 @@ The game has been designed to provide both an engaging and enjoyable user experi
 ### Flowchart
 
 * The game's logic is represented using flowcharts, which makes it easy to understand and debug.
+* I used www.draw.io's (https://app.diagrams.net/) free flowchart designer to spend some time thinking about my logic and planning directions needed to get the flow of my project just right. I found this part of the project the most challenging and trying to get the logic pinned down first wasn't as easy as I first thought it would be.<br>
 
-insert flow chart here
+![Flow Chart](docs/readme_images/hangman_flowchart.jpg)
 
 ## Features 
 
