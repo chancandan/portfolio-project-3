@@ -30,31 +30,6 @@ def game_word(level):
     return random.choice(word_dict[level])
 
 
-def play_hangman(difficulty, username):
-    """
-    This function starts a game of Hangman with a the user's chosen difficulty
-    level and username. It prints the game instructions and sets up the game
-    variables such as the secret word, guessed letters, and remaining lives.
-    The secret word is generated using the game_word function.
-    """
-    print("\033[32m" + f"Welcome {username}. Let's play some Hangman!\n" +
-          "\033[0m")
-    print("Game instructions:")
-    print("Guess the secret word one letter at a time.")
-    print("Correct guessed letters will be revealed in the word.")
-    print("You will lose a life for each letter guessed that is wrong.")
-    print("You start out with 6 lives.")
-    print("Good luck!\n")
-
-    word = game_word(difficulty)
-    if word is None:
-        return
-
-    secret_word = ["_"] * len(word)
-    guessed_letters = []
-    lives = 6
-
-
 def is_valid_guess(guess, guessed_letters):
     """
     This function validates the user's input when they guess a letter.
@@ -113,6 +88,23 @@ def play_hangman(difficulty, username):
     print("You start out with 6 lives.")
     print("Good luck!\n")
 
+    score = 0  # initialize the score to 0
+
+    # read the current score from the file, if it exists
+    if os.path.isfile("scores.txt"):
+        with open("scores.txt", "r") as f:
+            score = int(f.read())
+
+    # play the game and update the score if the user wins
+    if is_game_over(lives, secret_word, word):
+        if lives > 0:
+            print("\033[32mYou win! You guessed the word, well done!\033[0m")
+            score += 1  # increment the score
+
+            # write the updated score to the file
+            with open("scores.txt", "w") as f:
+                f.write(str(score))
+
     word = game_word(difficulty)
     if word is None:
         return
@@ -126,7 +118,7 @@ def play_hangman(difficulty, username):
     while not is_game_over(lives, secret_word, word):
         print(" ".join(secret_word))
         print(f"Remaining Lives: {lives}")
-        guess = input("Guess a letter: \n").lower()
+        guess = input("Guess a letter: ").lower()
 
         if is_valid_guess(guess, guessed_letters):
             if guess in word:
