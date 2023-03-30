@@ -7,7 +7,7 @@ def game_word(level):
     """
     word_dict = {
         "easy": ["cat", "name", "cup", "dog", "hat", "car", "tree", "book", "door",\
-        "cake", "bird", "pen", "slip", "card", "game", "coin"],
+        "cake", "bird", "pen", "slip", "card", "game", "coin", "pole"],
         "medium": ["soccer", "computer", "python", "jacket", "sunflower",\
         "television", "guitar", "popcorn", "giraffe", "restaurant",\
         "hamster", "basket", "ticket", "packet", "laptop"],
