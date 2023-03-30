@@ -6,14 +6,14 @@ def game_word(level):
     It validates that user must chose from the available options.
     """
     word_dict = {
-        "easy": ["cat", "name", "dog", "hat", "car", "tree", "book", "door",\
+        "easy": ["cat", "name", "cup", "dog", "hat", "car", "tree", "book", "door",\
         "cake", "bird", "pen", "slip", "card", "game", "coin"],
         "medium": ["soccer", "computer", "python", "jacket", "sunflower",\
         "television", "guitar", "popcorn", "giraffe", "restaurant",\
         "hamster", "basket", "ticket", "packet"],
         "hard": ["qualifier", "xylophone", "juxtaposition", "quagmire",\
         "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous",\
-        "zeitgeist", "quintessential", "terminal"]
+        "zeitgeist", "quintessential", "terminal", "calculator"]
     }
     if level not in word_dict:
         print("That's not a valid difficulty level. Please choose from\
