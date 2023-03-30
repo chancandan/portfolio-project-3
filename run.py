@@ -44,7 +44,17 @@ def play_hangman(difficulty, username):
     guessed_letters = []
     lives = 6
 
-    # ASCII art of the hangman
+def is_valid_guess(guess, guessed_letters):
+    if len(guess) != 1 or not guess.isalpha():
+        print("Invalid input. Please enter just a single letter.")
+        return False
+    elif guess in guessed_letters:
+        print("You've already used that letter. Try another.")
+        return False
+    else:
+        return True
+
+def print_hangman(lives):
     hangman = [
         "   _________",
         "   |        |",
@@ -54,47 +64,61 @@ def play_hangman(difficulty, username):
         "   |       / \\",
         "___|___"
     ]
-    # Print the initial hangman
     print("\n".join(hangman[:lives]))
 
-    while lives > 0 and "_" in secret_word:
+def is_game_over(lives, secret_word, word):
+    if lives == 0:
+        print(f"\033[31mGame Over! You lost. The answer was: {word.capitalize()}\033[0m")
+        return True
+    elif "_" not in secret_word:
+        print("\033[32mYou win! You guessed the word, well done!\033[0m")
+        return True
+    else:
+        return False
+
+def play_hangman(difficulty, username):
+    print(f"\033[32mWelcome {username}. Let's play some Hangman!\n\033[0m")
+    print("Game instructions:")
+    print("Guess the secret word one letter at a time.")
+    print("Correct guessed letters will be revealed in the word.")
+    print("You will lose a life for each letter guessed that is wrong.")
+    print("You start out with 6 lives.")
+    print("Good luck!\n")
+
+    word = game_word(difficulty)
+    if word is None:
+        return
+
+    secret_word = ["_"] * len(word)
+    guessed_letters = []
+    lives = 6
+
+    print_hangman(lives)
+
+    while not is_game_over(lives, secret_word, word):
         print(" ".join(secret_word))
         print(f"Remaining Lives: {lives}")
         guess = input("Guess a letter: \n").lower()
 
-        # Validate the user's input when they guess a letter.
-        while len(guess) != 1 or not guess.isalpha():
-            print("Invalid input. Please enter just a single letter.")
-            guess = input("Guess a letter: \n").lower()
+        if is_valid_guess(guess, guessed_letters):
+            if guess in word:
+                print("\033[32mCorrect\033[0m")
+                for i in range(len(word)):
+                    if word[i] == guess:
+                        secret_word[i] = guess
+            else:
+                print("\033[31mIncorrect\033[0m")
+                lives -= 1
 
-        if guess in guessed_letters:
-            print("You've already used that letter. Try another.")
-        elif guess in word:
-            print("\033[32m" + "Correct" + "\033[0m")
-            for i in range(len(word)):
-                if word[i] == guess:
-                    secret_word[i] = guess
-        else:
-            print("\033[31m" + "Incorrect" + "\033[0m")
-            lives -= 1
-
-        guessed_letters.append(guess)
-
-        # Print the updated hangman
-        print("\n".join(hangman[:lives]))
-
-    if lives == 0:
-        print("\033[31m" + "Game Over! " + "\033[0m"
-              "You lost. The answer was: " + word.capitalize())
-    else:
-        print("\033[32m" + "You win! " + "\033[0m" + 
-              "You guessed the word, well done!")
+            guessed_letters.append(guess)
+            print_hangman(lives)
 
     play_again = input("Would you like to play again? (y/n/)").lower()
     if play_again == "y":
         play_hangman(difficulty, username)
     else:
         print("Thanks for playing, come back soon!")
+
 
 
 print("\033[32m" + """
