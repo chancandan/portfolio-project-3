@@ -1,5 +1,9 @@
+import os
 import random
 
+
+def clear_terminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def game_word(level):
     """
@@ -131,6 +135,7 @@ def play_hangman(difficulty, username):
                     if word[i] == guess:
                         secret_word[i] = guess
             else:
+                clear_terminal()
                 print("\033[31mIncorrect\033[0m")
                 lives -= 1
 
