@@ -76,7 +76,7 @@ def print_hangman(lives):
         "   |       / \\",
         "___|___"
     ]
-    print("\n".join(hangman[:lives]))
+    print("\n".join(hangman[:7-lives]))
 
 
 def is_game_over(lives, secret_word, word):
@@ -109,7 +109,7 @@ def play_hangman(difficulty, username):
 
     secret_word = ["_"] * len(word)
     guessed_letters = []
-    lives = 1
+    lives = 6
 
     print_hangman(lives)
 
@@ -126,7 +126,7 @@ def play_hangman(difficulty, username):
                         secret_word[i] = guess
             else:
                 print("\033[31mIncorrect\033[0m")
-                lives += 1
+                lives -= 1
 
             guessed_letters.append(guess)
             print_hangman(lives)
