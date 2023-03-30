@@ -44,7 +44,13 @@ def play_hangman(difficulty, username):
     guessed_letters = []
     lives = 6
 
+
 def is_valid_guess(guess, guessed_letters):
+    """
+    This function validates the user's input when they guess a letter.
+    Checks if the letter has already been guessed by the user and if 
+    the guess is a single alphabetical character.
+    """
     if len(guess) != 1 or not guess.isalpha():
         print("Invalid input. Please enter just a single letter.")
         return False
@@ -53,6 +59,7 @@ def is_valid_guess(guess, guessed_letters):
         return False
     else:
         return True
+
 
 def print_hangman(lives):
     hangman = [
