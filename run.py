@@ -10,7 +10,7 @@ def game_word(level):
         "cake", "bird", "pen", "slip", "card", "game", "coin"],
         "medium": ["soccer", "computer", "python", "jacket", "sunflower",\
         "television", "guitar", "popcorn", "giraffe", "restaurant",\
-        "hamster", "basket", "ticket", "packet"],
+        "hamster", "basket", "ticket", "packet", "laptop"],
         "hard": ["qualifier", "xylophone", "juxtaposition", "quagmire",\
         "mnemonic", "haphazard", "furtive", "belligerent", "ubiquitous",\
         "zeitgeist", "quintessential", "terminal", "calculator"]
