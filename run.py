@@ -1,6 +1,5 @@
 import random
 
-
 def game_word(level):
     word_dict = {
         "easy": ["cat", "name", "dog", "hat", "car", "tree", "book", "door",\
@@ -62,12 +61,12 @@ def play_hangman(difficulty, username):
         if guess in guessed_letters:
             print("You've already used that letter. Try another.")
         elif guess in word:
-            print("Correct")
+            print("\033[32m" + "Correct" + "\033[0m")
             for i in range(len(word)):
                 if word[i] == guess:
                     secret_word[i] = guess
         else:
-            print("Incorrect")
+            print("\033[31m" + "Incorrect" + "\033[0m")
             lives -= 1
 
         guessed_letters.append(guess)
@@ -76,9 +75,11 @@ def play_hangman(difficulty, username):
         print("\n".join(hangman[:lives]))
 
     if lives == 0:
-        print("Game Over! You lost. The answer was: " + word.capitalize())
+        print("\033[31m" + "Game Over! " + "\033[0m"
+              "You lost. The answer was: " + word.capitalize())
     else:
-        print("You guessed the word, well done!")
+        print("\033[32m" + "You win! " + "\033[0m" + 
+              "You guessed the word, well done!")
 
     play_again = input("Would you like to play again? (y/n/)").lower()
     if play_again == "y":
@@ -97,8 +98,7 @@ print("\033[32m" + """
                      __/ |                     
                     |___/                      
 
-Welcome to Hangman!
-"""  + "\033[0m")
+""" + "\033[0m" + "Welcome to Hangman!\n")
 username = input("Please enter your username: ")
 
 while True:
