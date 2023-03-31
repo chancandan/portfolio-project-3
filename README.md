@@ -123,36 +123,47 @@ the first space of our 4 letter word. A great start for the the player. (See ima
 
 ![First Guess](docs/readme_images/first_guess.jpg)
 
--
+- The second guess is incorrect and the player has lost a life. We can see that there are
+5 lives remaining now. Also, an incorrect answer clear the terminal of previous content. 
+The "Incorrect" message that appears in a red color, and this is to signigy feedback to the user that they have lost a life. The hangman animation has added an piece of the image to signify this loss of a life also.
 
 
 ![second Guess](docs/readme_images/second_guess.jpg)
 
--
+- Third guess is also incorrect and we can see that we have lost another life.
+The hangman image now includes the man's head in the ASCII art.
 
 ![Third Guess](docs/readme_images/third_guess.jpg)
 
--
+- A correct guess next sees the player get another letter correct. This time it's the letter "d" and we can see that it occupys the last space of our 4 letter word.
 
 ![Forth Guess](docs/readme_images/forth_guess.jpg)
 
--
+- With 2 letters correct and placed in our secret worth the player quickly gets another correct.
+We can see that ASCII art images does not get large when a guess is correct. This ticks off one of the testing boxes
+and we know this is functioning correctly as we have seen in previous guesses that it gets larger on an incorrect guess.
 
 ![Fifth Guess](docs/readme_images/fifth_guess.jpg)
 
--
+- The remaining lives are down to 3 after another incorrect guess.
+The ASCII artwork also takes the form of a boday and hands to coincide with this.
 
 ![Sixth Guess](docs/readme_images/sixth_guess.jpg)
 
--
+- Player loses another life and the AscII art gains too. 
+Terminal clears past incorrect guesses to keep the space clear and clean.
 
 ![Seventh Guess](docs/readme_images/seventh_guess.jpg)
 
--
+- User loses another life, just 1 remaining life now.
 
 ![Eigth Guess](docs/readme_images/eigth_guess.jpg)
 
--
+- Success, the player wins! 
+A green message appears underneath our hangman to say "You win! You guessed the word, well done".
+The user is then asked if they would like to play another game. y/n
+If the user selects "y" then the game restarts.
+If the user selects "n" they are brought out to the main menu again where they can choose to read game instructions, exit the game or if they want to change their mind they can choose to play game.
 
 ![Nineth Guess](docs/readme_images/nineth_guess.jpg)
 
@@ -186,8 +197,8 @@ the first space of our 4 letter word. A great start for the the player. (See ima
 
 
 ### Python Packages
-random
-json
+ - random
+- json
 
 
 ### Frameworks - Libraries - Programs Used
@@ -207,6 +218,14 @@ At the end of development the game's python code satisfy's<br>
 PEP 8's standards for python code as seen blow.
 
 ![Python Errors](docs/readme_images/error_free_code.jpg)
+
+### Lighthouse Testing
+
+* The app was taken through Google's Lighthouse testing and achieved the scores seen in the image below.
+The scores for best practices and SEO could be improved upon however a template was used for this project from Code Insititute and the focus on this project is not on html5 and CSS3, but more on the python code used. The app performs 
+well and is accessible.
+
+![Lighthouse Testing](docs/readme_images/lighthouse.jpg)
 
 ## Deployment
 
