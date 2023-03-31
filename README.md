@@ -75,15 +75,56 @@ The game has been designed to provide both an engaging and enjoyable user experi
 1 - Play the gmae<br>
 2 - Read the game instructions<br>
 3 - Exit the game
+<br>
 
 
 ![Title](docs/readme_images/main_menu.jpg)
 
 ### Help / Game rules
 
-The user can call the game rules and instructions in the main menu. Here they can see the simple rules behind the game.
+* The user can call the game rules and instructions in the main menu. 
+* Here they can see the simple rules behind the game.<br>
+<br>
 
-![Help](docs/readme_images/help_button.JPG)
+![Help](docs/readme_images/instructions.jpg)
+
+
+### Game Level / Difficulty
+
+* Next, the player is prompted to choose which level they would like to play the game at.
+
+- Easy
+- Medium
+- Hard
+<br>
+
+![Levels](docs/readme_images/levels.jpg)
+<br>
+
+
+### Game Play
+<br>
+
+- Below is a screenshot of what we see after we choose a difficulty level of "Easy. Each difficulty level will look similar at first, the only difference being the harder the level the more letters in the words and less common words.
+We have a game play welcome message customize with our username we entered at the beginning and we're presented with the game rules to remind us how to play. We can see a straight horizontal white line which is the beginning phase of the ASCII hangman art animation. Below this we see 4 dashes, each representing a letter of our secret word. So, the user now knows that there are 4 letters in this secret word. The remaining lives is displayed directly underneath this and we can see that there are 6 lives left, as that is what each game starts out with.
+
+- The user is then promopted to guess a letter.<br>
+<br>
+
+![Levels](docs/readme_images/gameplay_screen.jpg)
+
+
+#### First Guess
+
+- User enters first guess with the letter "b" and it's a very lucky guess at it's the correct letter. 
+
+- A green "Correct" message appears above the gmae area and we can see that the letter "b" slots into
+the first space of our 4 letter word. A great start for the the player. (See image below):
+
+![First Guess](docs/readme_images/first_guess.jpg)
+
+
+
 
 
 ### Future feautres
@@ -98,7 +139,8 @@ The user can call the game rules and instructions in the main menu. Here they ca
 * [Github](https://github.com/)
 * [Favicon](https://favicon.io/favicon-converter/)
 * [Random Word Generator](https://randomwordgenerator.com/)
-* [ASCII art](https://www.twitchquotes.com/copypastas/ascii-art) 
+* [ASCII art](https://www.twitchquotes.com/copypastas/ascii-art)
+* [Flow Chart](https://www.draw.iot) 
 
 
 ## Technologies Used
