@@ -123,6 +123,39 @@ the first space of our 4 letter word. A great start for the the player. (See ima
 
 ![First Guess](docs/readme_images/first_guess.jpg)
 
+-
+
+
+![second Guess](docs/readme_images/second_guess.jpg)
+
+-
+
+![Third Guess](docs/readme_images/third_guess.jpg)
+
+-
+
+![Forth Guess](docs/readme_images/forth_guess.jpg)
+
+-
+
+![Fifth Guess](docs/readme_images/fifth_guess.jpg)
+
+-
+
+![Sixth Guess](docs/readme_images/sixth_guess.jpg)
+
+-
+
+![Seventh Guess](docs/readme_images/seventh_guess.jpg)
+
+-
+
+![Eigth Guess](docs/readme_images/eigth_guess.jpg)
+
+-
+
+![Nineth Guess](docs/readme_images/nineth_guess.jpg)
+
 
 
 
