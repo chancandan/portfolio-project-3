@@ -168,7 +168,7 @@ while True:
     print("3 - View game high scores")
     """
     print("3 - Exit the game\n")
-    choice = input("Enter your choice (1, 2, 3, or 4): ")
+    choice = input("Enter your choice (1, 2, or 3,): ")
     print("")
     clear_terminal()
     if choice == "1":
@@ -203,4 +203,4 @@ while True:
         print("Thanks for playing Hangman!")
         break
     else:
-        print("Invalid input. Please enter 1, 2, 3, or 4.")
+        print("Invalid input. Please enter 1, 2, or 3.")
