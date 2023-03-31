@@ -158,7 +158,13 @@ print("\033[32m" +
       "\033[0m" +
       "Welcome to Hangman!\n")
 
-username = input("Please enter your username: ")
+while True:
+    username = input("Please enter your username: ")
+    if len(username) >= 3:
+        break
+    else:
+        print("Invalid input!")
+        print("Your username must be at least 3 characters long.")
 
 while True:
     print("\nPlease select an option:\n")
