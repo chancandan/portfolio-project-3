@@ -59,6 +59,20 @@ The game has been designed to provide both an engaging and enjoyable user experi
 
 ![Flow Chart](docs/readme_images/hangman_flowchart.jpg)
 
+
+### Design
+
+- The following were used int he design and development of this app.
+
+* [Gitpod](https://gitpod.io)
+* [Github](https://github.com/)
+* [Favicon](https://favicon.io/favicon-converter/)
+* [Random Word Generator](https://randomwordgenerator.com/)
+* [ASCII art](https://www.twitchquotes.com/copypastas/ascii-art)
+* [Flow Chart](https://www.draw.iot) 
+* [Color Picker](https://imagecolorpicker.com/en) 
+
+
 ## Features 
 
 ### Welcome Message
@@ -181,20 +195,15 @@ You lost. The answer was: Cup"
 
 
 
-### Future feautres
+## Future feautres
+
+- In future updates to this app the following will be added.
 
 * High scores and rankings
 * Hints to help guess words
 * An expanded word list for more words
 
-### Design
 
-* [Gitpod](https://gitpod.io)
-* [Github](https://github.com/)
-* [Favicon](https://favicon.io/favicon-converter/)
-* [Random Word Generator](https://randomwordgenerator.com/)
-* [ASCII art](https://www.twitchquotes.com/copypastas/ascii-art)
-* [Flow Chart](https://www.draw.iot) 
 
 
 ## Technologies Used
@@ -216,6 +225,14 @@ Git
 GitHub
 
 ## Testing
+
+### User Input Validation
+
+* The first thing the user has to do is enter a username. However, it must be at least 3 characters in length.
+If the user enters anything under 3 chjaracters they see an "Invalid input!" error and an explaination that they're required to enter at least 3 characters for their username. (See image below)
+
+![Invalid Username](docs/readme_images/invalid_username.jpg)
+
 
 ### PEP 8 Online
 

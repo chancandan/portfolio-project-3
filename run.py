@@ -170,9 +170,6 @@ while True:
     print("\nPlease select an option:\n")
     print("1 - Play the game")
     print("2 - Read the game instructions")
-    """
-    print("3 - View game high scores")
-    """
     print("3 - Exit the game\n")
     choice = input("Enter your choice (1, 2, or 3,): ")
     print("")
@@ -200,11 +197,6 @@ while True:
         print("If you guess an incorrect letter, you will lose a life.")
         print("You have 6 lives to start with.")
         print("Good luck!\n")
-    elif choice == "4":
-        print("High scores:")
-        print("1. Player 1 - 1000 points")
-        print("2. Player 2 - 750 points")
-        print("3. Player 3 - 500 points\n")
     elif choice == "3":
         print("Thanks for playing Hangman!")
         break
