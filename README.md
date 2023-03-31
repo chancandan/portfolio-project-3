@@ -31,17 +31,17 @@ The game has been designed to provide both an engaging and enjoyable user experi
 
 * As a new visitor, I want to:
 
-1 - Get into the game quickly without too much time spent on figure out how to do so.
-2 - Quickly see the game rules if I need help.
-3 - Play and learn a new variation on an old classic game
-4 - See how many lives I have left when I guess incorrectly.
-5 - See what letters I have guessed correctly appear exactly where they are contained in the secret word.
+- 1 - Get into the game quickly without too much time spent on figure out how to do so.
+- 2 - Quickly see the game rules if I need help.
+- 3 - Play and learn a new variation on an old classic game
+- 4 - See how many lives I have left when I guess incorrectly.
+- 5 - See what letters I have guessed correctly appear exactly where they are contained in the secret word.
 
 * As a returning visitor, I want to:
 
-1 - Increase game difficulty if I want to further challenge myself.
-2 - Have a different word present itself for new games.
-3 - Beat the game / device.
+- 1 - Increase game difficulty if I want to further challenge myself.
+- 2 - Have a different word present itself for new games.
+- 3 - Beat the game / device.
 
 ### Target Audience
 
