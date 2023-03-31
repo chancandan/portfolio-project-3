@@ -50,7 +50,7 @@ The game has been designed to provide both an engaging and enjoyable user experi
 - People who enjoy simple fun games
 
 
-## Game Design
+## Game Design / Logic
 
 ### Flowchart
 
@@ -265,6 +265,14 @@ At the end of development the game's python code satisfy's<br>
 PEP 8's standards for python code as seen blow.
 
 ![Python Errors](docs/readme_images/error_free_code.jpg)
+
+# ## Testing Functionality 
+
+- The game's terminal works without issues. 
+- The username input shows the right behaviour and hits the user with an invalid input if incorrect.
+- Play game, read instructions and exit game all work without issues.
+- The game runs without any issues and as expected 
+- The option to play again or exit works properly and no issues are present.
 
 ### Lighthouse Testing
 
