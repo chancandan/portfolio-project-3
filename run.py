@@ -190,8 +190,7 @@ while True:
     elif choice == "2":
         print("Instructions:")
         print("Try to guess the secret word one letter at a time.")
-        print("If you guess a correct letter, it will be revealed in the \
-            word.")
+        print("Guess a correct letter and it will be revealed in the word.")
         print("If you guess an incorrect letter, you will lose a life.")
         print("You have 6 lives to start with.")
         print("Good luck!\n")

@@ -4,17 +4,18 @@
 ![Flow Chart](docs/readme_images/hangman_mockup.JPG)
 
 # Introduction
-Welcoem to the Hangman Game! This is a classic word guessing game that challenges your vocab and guessing skills to guess a secret word until you run out of lives. 
+Welcome to the Hangman Game! This is a classic word guessing game that challenges your vocab and guessing skills to guess a secret word until you run out of lives. The game wa sinvented in the late 1800's and is still popular to this present day. User's will get 6 lives when trying to guess correct letters in the secret word. Each incorrect answer will reduce the user's lives by one life until the user either guesses the correct word or runs out of lives and hangman appears in our art animation. Enjoy.
 
-You can play the game [here](https://chancandan-portfolio-project-3.herokuapp.com/)
+You can play the game [here](https://chancandan-portfolio-project-3.herokuapp.com/).
 
 
 ## Contents
 
-*
-*
-*
-*
+* (UX) - User Experience
+* Game Design
+* Features 
+* Technologies Used
+* Testing
 
 
 ## (UX) - User Experience
@@ -69,6 +70,14 @@ The game has been designed to provide both an engaging and enjoyable user experi
 ### Main Menu
 
 * After entering a username the user will be presented with the main menu.
+* User can choose from any of the following 3 options:
+
+1 - Play the gmae<br>
+2 - Read the game instructions<br>
+3 - Exit the game
+
+
+![Title](docs/readme_images/main_menu.jpg)
 
 ### Help / Game rules
 
@@ -79,9 +88,9 @@ The user can call the game rules and instructions in the main menu. Here they ca
 
 ### Future feautres
 
-* 
-* 
-* 
+* High scores and rankings
+* Hints to help guess words
+* An expanded word list for more words
 
 ### Design
 
@@ -124,6 +133,63 @@ PEP 8's standards for python code as seen blow.
 
 ![Python Errors](docs/readme_images/error_free_code.jpg)
 
+## Deployment
+
+### Deployment to Heroku App
+
+- The Hangman Game app was deployed to GitHub pages. The following steps were taken when deploying: 
+  - Navigate to the Settings tab in the heroku dashboard. 
+  - Select cong var and input "Port" and 8,000
+  - Select 'Build packages' from the menu and first choose Python, add it. Then repeat and choose node.js and add it.
+  - Then chose to deploy from github and search for the correct repository. Then manually deploy.
+  - After a short wait a the app will be deployed live to the web.
+
+The game's live link can be found here - https://chancandan-portfolio-project-3.herokuapp.com/
+
+### Version Control
+
+During the development of the site, When pushing code to the remote repository, I used the following git commands 
+
+```git add .``` - All files added to a staging area awaiting the commit phase.
+
+```git commit -m “specific commit message”``` - To commit changes to the local repository queue where they become ready for the push phase.
+
+```git push``` - All commited code would be then pushed to the site's repo on github.
+
+## Credits
+
+### Content
+
+* The terminal function and template for the deployable application was provided by [Code Institute - Template](https://github.com/Code-Institute-Org/python-essentials-template)
+  
+### Resources and other information
+
+* [Stack Overflow](https://stackoverflow.com/)
+* [W3Schools - Python](https://www.w3schools.com/python/)
+
+
+
+## Credits and Acknowledgements
+
+A variety of contributors and help went into the development this game app:
+
+* My class and course facilitator have been great help in our slack group during this project.
+
+* https://www.youtube.com/watch?v=cJJTnI22IF8 a good Yuotube tutorial I watched to gain an understanding behind the logic required to develop my project
+
+* https://itsourcecode.com/free-projects/pygame/code-for-game-in-python/#google_vignette
+
+* https://ibb.co/Y8tk3cg
+
+* https://gist.github.com/chrishorton/8510732aa9a80a03c829b09f12e20d9c
+
+* https://www.devdungeon.com/search/node/hangman
+
+* https://ascii.co.uk/art/hangman
+
+* Youtube tutorial https://www.youtube.com/watch?v=m4nEnsavl6w was another tutorial I watched to gain an understanding of how to use python for my project.
+
+* Finally, my mentor Gareth has been great in helping me clearly understand the project brief and nudging me in the right direction when I've come unstuck.
 
 
 
