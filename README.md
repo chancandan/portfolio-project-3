@@ -26,8 +26,8 @@ The game has been designed to provide both an engaging and enjoyable user experi
 
 * As a website creator, I want to:
 
-1 - Build an easy to play game in an app.
-2 - Create and build a game that is fun while also a challenge for the player.
+- 1 - Build an easy to play game in an app.
+- 2 - Create and build a game that is fun while also a challenge for the player.
 
 * As a new visitor, I want to:
 
@@ -233,6 +233,20 @@ If the user enters anything under 3 chjaracters they see an "Invalid input!" err
 
 ![Invalid Username](docs/readme_images/invalid_username.jpg)
 
+### Invalid Main Menu Input
+
+* After entering a correct username the player is then asked to choose from 1 of 3 options on the main menu.
+If the user does not enter either 1, 2, or 3 then they are hit with the invalid input message seen in the image (below). They are then again prompted to choose from either option 1, 2, or 3.
+
+![Invalid Main Menu](docs/readme_images/invalid_menu_selection.jpg)
+
+### Invalid Difficulty Level
+
+* Next, the player must choose a difficulty between Easy, Medium and Hard. If the user enters anything other
+than 1, 2, or 3 then they see the invalid input message seen in the below image and are prompted once more to make 
+their choice again. Once the y do then the game begins!
+
+![Invalid Level](docs/readme_images/invalid_level.jpg)
 
 ### PEP 8 Online
 
