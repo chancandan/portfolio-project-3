@@ -168,6 +168,16 @@ If the user selects "n" they are brought out to the main menu again where they c
 ![Nineth Guess](docs/readme_images/nineth_guess.jpg)
 
 
+#### Game Over!
+
+- Once the player guesses incorrectly all 6 lives are lost and the hagman image is complete.
+- A message appears to provide the user with further feedback on this saying "Game Over!
+You lost. The answer was: Cup"
+- The player also gets to see where what the correct answer that they were trying to guess was.
+
+![Game Over!](docs/readme_images/game_over.jpg)
+
+
 
 
 
